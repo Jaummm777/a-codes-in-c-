@@ -2,14 +2,12 @@
 
 int main()
 {
-    int idadeAnos, idadeMeses, idadeDias = 0;
-    std::cout<<"\nDigite sua idade em anos: ";
-    std::cin>>idadeAnos;
-    std::cout<<"\nDigite sua idade em meses: ";
-    std::cin>>idadeMeses;
-    std::cout<<"Digite sua idade em meses: ";
-    std::cin>>idadeMeses;
-    int totalDiasDeVida = idadeAnos * 365 + idadeMeses * 30 + idadeDias;
-    std::cout<<"Sua idade em dias é "<<totalDiasDeVida<<"\n";
-
+    int tempoDeDuracao = 0;
+    std::cout<<"\nDigite o tempo de duração do evento: ";
+    std::cin>>tempoDeDuracao;
+    int minutos = tempoDeDuracao / 60;
+    int segundos = tempoDeDuracao % 60;
+    int horas = minutos / 60;
+    minutos = minutos % 60;
+    std::cout<<"Tempo de duração: "<<horas<<":"<<minutos<<":"<<segundos<<"\n";
 }
