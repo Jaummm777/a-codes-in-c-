@@ -1,13 +1,17 @@
 #include <iostream>
+#include <cmath>
 
 int main()
 {
-    int tempoDeDuracao = 0;
-    std::cout<<"\nDigite o tempo de duração do evento: ";
-    std::cin>>tempoDeDuracao;
-    int minutos = tempoDeDuracao / 60;
-    int segundos = tempoDeDuracao % 60;
-    int horas = minutos / 60;
-    minutos = minutos % 60;
-    std::cout<<"Tempo de duração: "<<horas<<":"<<minutos<<":"<<segundos<<"\n";
+    float raio, altura = 0;
+    std::cout<<"\nDigite a altura do cilindro: ";
+    std::cin>>altura;
+    std::cout<<"\nDigite o raio do cilindro: ";
+    std::cin>>raio;
+    float pi = 3.1415;
+    float area = 2 * pi * raio * (altura + raio);
+    float volume = pi * ((raio),2) * altura;
+    std::cout<<"\n O volume do cilindro é "<<volume<<"\n";
+    std::cout<<"\n A área do cilindro é "<<area<<"\n";
+
 }
